@@ -43,20 +43,22 @@ NONE = Serial.read();
 Serial.print(NONE);        
 Serial.print("\n");        
 if(NONE == 'A')            
-digitalWrite(LED1, HIGH);  
+LED1On();  
 
 else if(NONE == 'B')       
-digitalWrite(LED1, LOW);   
+LED1Off();   
 
 if(NONE == 'C')            
-digitalWrite(LED2, HIGH);  
+LED2On();  
 else if(NONE == 'D')       
-digitalWrite(LED2, LOW);   
-
-
+LED2Off();   
 if(NONE == 'E')           
-digitalWrite(LED3, HIGH);  
+LED3On();  
 else if(NONE == 'F')       
-digitalWrite(LED3, LOW);   
-}                        
+LED3Off();   
+else if(NONE == 'G')
+allon();
+else if(NONE == 'H')
+alloff();
+}
 }    
